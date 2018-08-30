@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/item_help"
+        android:title="راهنما"/>
+    <item
+        android:id="@+id/item_mbar"
+        android:title="ایجاد میانبر"/>
+    <item
+        android:id="@+id/item_booster"
+        android:visible="false"
+        android:title="بهینه سازی دستگاه"/>
+    <item
+    android:id="@+id/item_hide"
+    android:visible="false"
+    android:title="شماره های مخفی شده"/>
+    <item
+        android:id="@+id/item_app_backup"
+        android:visible="false"
+        android:title="اپ های پشتیبانی گرفته شده"/>
+    <item
+        android:id="@+id/item_record"
+        android:visible="false"
+        android:icon="@drawable/microphone"
+        android:showAsAction="ifRoom"
+        app:showAsAction="ifRoom|collapseActionView"
+        android:title="صوت به نوشتار"/>
+
+</menu>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/item_about"
+        android:title="درباره ما"
+        android:visible="false" />
+    <item
+        android:id="@+id/item_change"
+        android:title="تغییرات آخرین نسخه"
+        android:visible="false" />
+    <item
+        android:id="@+id/item_donate"
+        android:title="حمایت از برنامه" />
+
+    <item
+        android:id="@+id/item_share"
+        android:title="اشتراک برنامه" />
+
+    <item
+        android:id="@+id/item_other_apps"
+        android:title="برنامه های دیگر ما" />
+
+</menu>

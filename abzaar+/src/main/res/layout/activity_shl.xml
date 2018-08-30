@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:flatui="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:theme="@style/Theme.ThemeOverlay"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:id="@+id/main_name"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:text="کوتاه کننده لینک"
+                    android:textColor="#000000"
+
+                    android:textSize="@dimen/normal" />
+
+            </RelativeLayout>
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:id="@+id/ScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/toolbar"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ghasemi.abbas.abzaar.db.TextInputLayout
+                    android:id="@+id/textInputLayout"
+                    style="@style/abzaar.TextInputLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="-4dp"
+                    android:layout_marginBottom="10dp">
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/getLink"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="7dp"
+                        android:layout_marginRight="7dp"
+                        android:gravity="left|center"
+                        android:hint="url"
+                        android:imeOptions="actionGo"
+                        android:inputType="text"
+                        android:lines="1"
+                        android:padding="5dp"
+                        android:textSize="@dimen/normal_c" />
+                </ghasemi.abbas.abzaar.db.TextInputLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/bg_border"
+                        android:orientation="vertical">
+
+                        <RadioGroup
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="5dp"
+                            android:layout_weight="1"
+                            android:gravity="center|center"
+                            android:orientation="horizontal"
+                            android:padding="5dp">
+
+                            <RadioButton
+                                android:id="@+id/Bitly"
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center|center"
+                                android:text="سرور Bitly"
+                                android:textSize="@dimen/normal" />
+
+                            <RadioButton
+                                android:id="@+id/noBitly"
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:checked="true"
+                                android:gravity="center|center"
+                                android:text="سرور Yon"
+                                android:textSize="@dimen/normal" />
+                        </RadioGroup>
+
+                        <Switch
+                            android:id="@+id/history"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:layout_weight="1"
+                            android:checked="true"
+                            android:gravity="right|center"
+                            android:padding="5dp"
+                            android:text="لینک ها پس از کوتاه سازی ذخیره شوند"
+                            android:textSize="@dimen/normal_b" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top|right"
+                        android:layout_marginRight="15dp"
+                        android:background="?android:windowBackground"
+                        android:paddingLeft="2dp"
+                        android:paddingRight="2dp"
+                        android:text="کوتاه سازی لینک ها توسط"
+                        android:textColor="@color/colorAccent2" />
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <com.android.bahaar.FlatButton.FlatButton
+                        android:id="@+id/Done"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:paddingTop="15dp"
+                        android:paddingBottom="15dp"
+                        android:text="کوتاه کن"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/normal_b"
+                        flatui:fl_cornerRadius="7dp"
+                        flatui:fl_theme="@array/green"
+                        flatui:fl_touchEffect="fl_ripple" />
+
+                    <LinearLayout
+                        android:id="@+id/LinearLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="-3dp"
+                            android:layout_marginRight="15dp"
+                            android:layout_marginBottom="10dp"
+                            android:background="@drawable/bg_border"
+                            android:orientation="vertical">
+
+                            <TextView
+
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:padding="10dp"
+                                android:text="لینک کوتاه شده شما:"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/normal_b" />
+
+                            <TextView
+                                android:id="@+id/setShL"
+
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:padding="10dp"
+                                android:text="new link: \n Short Link"
+                                android:textColor="@color/color_green"
+                                android:textSize="@dimen/normal_b" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:id="@+id/msg"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/bg_border"
+                        android:gravity="left"
+                        android:padding="10dp"
+                        android:text="لینک های کوتاه شده در اینجا نگهداری می شوند،در صورت غیر فعال سازی حذف می گردد."
+                        android:textSize="@dimen/normal_b" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top|right"
+                        android:layout_marginRight="15dp"
+                        android:background="?android:windowBackground"
+                        android:paddingLeft="2dp"
+                        android:paddingRight="2dp"
+                        android:text="تاریخچه"
+                        android:textColor="@color/colorAccent2" />
+                </FrameLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha=".8"
+            android:background="#FFFFFF"
+            android:visibility="gone" />
+
+        <com.wang.avi.AVLoadingIndicatorView
+            android:id="@+id/progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:indicatorColor="#000"
+            android:layout_gravity="center"
+            app:indicatorName="BallPulseIndicator" />
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/message"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/edit_text"
+        android:hint="send message"
+        android:imeOptions="actionSend"
+        android:maxLines="1"
+        android:padding="4dp"
+        android:textColor="#000" />
+
+    <requestFocus />
+
+</LinearLayout>

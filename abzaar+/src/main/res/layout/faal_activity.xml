@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:flatui="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:theme="@style/Theme.ThemeOverlay"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:id="@+id/main_name"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:text="فال حافظ"
+                    android:textColor="#000000"
+
+                    android:textSize="@dimen/normal" />
+
+            </RelativeLayout>
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView
+        android:id="@+id/ScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/LinearLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="20dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="20dp"
+                    flatui:srcCompat="@drawable/fall" />
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:gravity="center|center"
+                    android:text="ای حافظ شیرازی تو کاشف هر رازی \n ما طلب یک فالیم بر ما بنما رازی \n\n ابتدا نیت کنید \n سپس برای شادی روح حضرت حافظ یک صلوات فرستاده و دکمه گرفتن فال را لمس نمائید."
+                    android:textColor="#055e8d"
+                    android:textSize="@dimen/normal_c" />
+
+                <com.android.bahaar.FlatButton.FlatButton
+                    android:id="@+id/getFall"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:text="گرفتن فال"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/normal_b"
+                    flatui:fl_cornerRadius="5dp"
+                    flatui:fl_theme="@array/blue"
+                    flatui:fl_touchEffect="fl_ripple" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/LinearLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="20dp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center|center"
+                    android:text="غزل"
+                    android:textColor="#055e8d"
+                    android:textSize="@dimen/login" />
+
+                <TextView
+                    android:id="@+id/sher"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center|center"
+                    android:text="TextView"
+                    android:textColor="#3e4c59"
+                    android:textSize="@dimen/normal_c" />
+
+                <View
+                    android:id="@+id/view2"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="#26C6DA" />
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center|center"
+                    android:text="تفسیر"
+                    android:textColor="#055e8d"
+                    android:textSize="@dimen/login" />
+
+                <TextView
+                    android:id="@+id/tafsir"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center|center"
+                    android:text="TextView"
+                    android:textColor="#3e4c59"
+                    android:textSize="@dimen/normal_c" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/LinearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <com.android.bahaar.FlatButton.FlatButton
+            android:id="@+id/fall"
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:text="فال مجدد"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/normal_b"
+            flatui:fl_cornerRadius="0dp"
+            flatui:fl_touchEffect="fl_ripple" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="1dp"
+            android:layout_height="65dp"
+            android:background="#FFFFFF" />
+
+        <com.android.bahaar.FlatButton.FlatButton
+            android:id="@+id/share"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:text="اشتراک گذاری فال"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/normal_b"
+            flatui:fl_cornerRadius="0dp"
+            flatui:fl_touchEffect="fl_ripple" />
+    </LinearLayout>
+
+</LinearLayout>

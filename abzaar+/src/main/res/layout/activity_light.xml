@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:flatui="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/LayoutAsli"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:theme="@style/Theme.ThemeOverlay"
+                app:popupTheme="@style/AppTheme.PopupOverlay">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center">
+
+                    <TextView
+                        android:id="@+id/main_name"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:text="چراغ قوه"
+                        android:textColor="#000000"
+
+                        android:textSize="@dimen/normal" />
+
+                </RelativeLayout>
+            </androidx.appcompat.widget.Toolbar>
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <ScrollView
+            android:id="@+id/ScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/toolbar"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center|center"
+                    android:gravity="center|center"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <com.android.bahaar.FlatButton.FlatButton
+                        android:id="@+id/button2"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:lines="2"
+                        android:text="روشن کردن نور صفحه"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/normal_b"
+                        flatui:fl_cornerRadius="5dp"
+                        flatui:fl_theme="@array/green"
+                        flatui:fl_touchEffect="fl_ripple" />
+
+                    <com.android.bahaar.FlatButton.FlatButton
+                        android:id="@+id/button1"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:lines="2"
+                        android:text="روشن کردن چراغ قوه"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/normal_b"
+                        flatui:fl_cornerRadius="5dp"
+                        flatui:fl_theme="@array/green"
+                        flatui:fl_touchEffect="fl_ripple" />
+                </LinearLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:id="@+id/LinearLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_border"
+                        android:orientation="vertical"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:id="@+id/textView6"
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="تعیین زمان روشن شدن فلاش"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="@dimen/toolbar" />
+
+                        <SeekBar
+                            android:id="@+id/seekBar1"
+                            style="@style/Widget.AppCompat.SeekBar.Discrete"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:max="8" />
+
+                        <TextView
+                            android:id="@+id/textView5"
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="تعیین زمان خاموش شدن فلاش"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="@dimen/toolbar" />
+
+                        <SeekBar
+                            android:id="@+id/seekBar2"
+                            style="@style/Widget.AppCompat.SeekBar.Discrete"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:max="8" />
+
+                        <com.android.bahaar.FlatButton.FlatButton
+                            android:id="@+id/button3"
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1"
+                            android:paddingTop="15dp"
+                            android:paddingBottom="15dp"
+                            android:text="روشن کردن فلاشر"
+                            android:textColor="@android:color/white"
+                            android:textSize="@dimen/normal_b"
+                            flatui:fl_cornerRadius="7dp"
+                            flatui:fl_touchEffect="fl_ripple" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top|right"
+                        android:layout_marginRight="15dp"
+                        android:background="?android:windowBackground"
+                        android:paddingLeft="2dp"
+                        android:paddingRight="2dp"
+                        android:text="فلاشر"
+                        android:textColor="@color/colorAccent2" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@+id/lll"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_border"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <Switch
+                            android:id="@+id/selfFlash"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginBottom="5dp"
+                            android:text="روشن کردن" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="ضخامت نوار نمایش" />
+
+                        <SeekBar
+                            android:id="@+id/border"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:max="400" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="اندازه دایره نمایش" />
+
+                        <SeekBar
+                            android:id="@+id/size"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:max="10" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="مکان دایره نمایش" />
+
+                        <SeekBar
+                            android:id="@+id/site"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:max="10" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top|right"
+                        android:layout_marginRight="15dp"
+                        android:background="?android:windowBackground"
+                        android:paddingLeft="2dp"
+                        android:paddingRight="2dp"
+                        android:text="فلاش سلفی در شب"
+                        android:textColor="@color/colorAccent2" />
+                </FrameLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LayoutFaree"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/exit"
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center|center"
+            android:text="برای خاموش کردن چراغ صفحه ، لمس کنید."
+            android:textColor="@color/colorBlock"
+            android:textSize="@dimen/login" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:flatui="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:theme="@style/Theme.ThemeOverlay"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:id="@+id/main_name"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:text="فضول گیر"
+                    android:textColor="#000000"
+
+                    android:textSize="@dimen/normal" />
+
+            </RelativeLayout>
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView
+        android:id="@+id/ScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.android.bahaar.FlatButton.FlatButton
+                android:id="@+id/active"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                android:text="فعال سازی"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/normal_b"
+                flatui:fl_cornerRadius="5dp"
+                flatui:fl_theme="@array/green"
+                flatui:fl_touchEffect="fl_ripple" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/bg_border"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <CheckBox
+                        android:id="@+id/pic"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_weight="1"
+                        android:gravity="right|center"
+                        android:text="در هر ورود ناموفق عکس گرفته شود"
+                        android:textSize="@dimen/normal_b" />
+
+                    <CheckBox
+                        android:id="@+id/push"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_weight="1"
+                        android:gravity="right|center"
+                        android:text="پس از 2 تلاش ناموفق اعلان ارسال شود"
+                        android:textSize="@dimen/normal_b" />
+
+                    <CheckBox
+                        android:id="@+id/alarm"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right|center"
+                        android:text="پس از 3 تلاش ناموفق هشدار فعال شود"
+                        android:textSize="@dimen/normal_b" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|right"
+                    android:layout_marginRight="15dp"
+                    android:background="?android:windowBackground"
+                    android:paddingLeft="2dp"
+                    android:paddingRight="2dp"
+                    android:text="قابلیت ها"
+                    android:textColor="@color/colorAccent2" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/bg_border"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <CheckBox
+                        android:id="@+id/system"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:checked="true"
+                        android:gravity="right|center"
+                        android:text="هشدار ، پیش فرض سیستم باشد"
+                        android:textSize="@dimen/normal_b" />
+
+                    <Switch
+                        android:id="@+id/history"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:checked="true"
+                        android:gravity="right|center"
+                        android:text="نمایش تاریخچه ورود فعال باشد."
+                        android:textSize="@dimen/normal_b" />
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|right"
+                    android:layout_marginRight="15dp"
+                    android:background="?android:windowBackground"
+                    android:paddingLeft="2dp"
+                    android:paddingRight="2dp"
+                    android:text="تنظیمات دیگر"
+                    android:textColor="@color/colorAccent2" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <com.android.bahaar.FlatButton.FlatButton
+                    android:id="@+id/gallery"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:text="تصاویر ظبط شده"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/normal_b"
+                    flatui:fl_cornerRadius="5dp"
+                    flatui:fl_theme="@array/blue"
+                    flatui:fl_touchEffect="fl_ripple" />
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:id="@+id/fl_history"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/msg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/bg_border"
+                    android:gravity="right"
+                    android:padding="10dp"
+                    android:text="گزارش تاریخچه ورود به تلفن اینجا نگهداری می شود،در صورت غیر فعال سازی حذف می گردد."
+                    android:textSize="@dimen/normal_b" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|right"
+                    android:layout_marginRight="15dp"
+                    android:background="?android:windowBackground"
+                    android:paddingLeft="2dp"
+                    android:paddingRight="2dp"
+                    android:text="تاریخچه"
+                    android:textColor="@color/colorAccent2" />
+            </FrameLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

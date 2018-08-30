@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar.Bridge">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:statusBarColor">#000000</item>
+        <item name="colorControlHighlight">#ced7db</item>
+        <item name="android:textColor">#78909C</item>
+        <!--<item name="colorControlHighlight">@color/colorControlHighlight</item> -->
+        <item name="android:navigationBarColor">#000000</item>
+        <!--<item name="android:textColorSecondary">@color/blue_light</item>-->
+        <!--<item name="android:statusBarColor">@color/colorPrimary</item>-->
+        <!--<item name="android:colorForeground">@color/blue_light</item>-->
+    </style>
+</resources>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="width_xo">75dp</dimen>
+    <dimen name="width_top_xo">289dp</dimen>
+</resources>

@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:flatui="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:theme="@style/Theme.ThemeOverlay"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:id="@+id/main_name"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:text="دانلودر اینستاگرام"
+                    android:textColor="#000000"
+
+                    android:textSize="@dimen/normal" />
+
+            </RelativeLayout>
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:id="@+id/ScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ghasemi.abbas.abzaar.db.TextInputLayout
+                    android:id="@+id/textInputLayout"
+                    style="@style/abzaar.TextInputLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="-4dp"
+                    android:layout_marginBottom="10dp">
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/getLink"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="7dp"
+                        android:layout_marginRight="7dp"
+                        android:gravity="left|center"
+                        android:hint="video or pic url"
+                        android:imeOptions="actionGo"
+                        android:inputType="text"
+                        android:lines="1"
+                        android:padding="5dp"
+                        android:textSize="@dimen/normal_c" />
+                </ghasemi.abbas.abzaar.db.TextInputLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <com.android.bahaar.FlatButton.FlatButton
+                        android:id="@+id/Done"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:paddingTop="15dp"
+                        android:paddingBottom="15dp"
+                        android:text="شروع بررسی و دانلود"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/normal_b"
+                        flatui:fl_cornerRadius="7dp"
+                        flatui:fl_theme="@array/green"
+                        flatui:fl_touchEffect="fl_ripple" />
+
+                    <LinearLayout
+                        android:id="@+id/LinearLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="-3dp"
+                            android:layout_marginRight="15dp"
+                            android:layout_marginBottom="10dp"
+                            android:background="@drawable/bg_border"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                                android:paddingTop="5dp"
+                                android:paddingBottom="5dp">
+
+                                <TextView
+                                    android:id="@+id/setName"
+
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="right|center"
+                                    android:lines="1"
+                                    android:text="TextView"
+                                    android:textSize="@dimen/main" />
+
+                                <TextView
+                                    android:id="@+id/setUser"
+
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="right|center"
+                                    android:lines="1"
+                                    android:text="TextView"
+                                    android:textSize="@dimen/main" />
+
+                                <TextView
+                                    android:id="@+id/setType"
+
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="right|center"
+                                    android:text=" نوع تصویر"
+                                    android:textColor="@color/colorPrimary"
+                                    android:textSize="@dimen/main" />
+                            </LinearLayout>
+
+                            <com.android.bahaar.RoundedImg.RoundedImageView
+                                android:id="@+id/picUser"
+                                android:layout_width="55dp"
+                                android:layout_height="55dp"
+                                android:layout_below="@+id/toolbar"
+                                android:layout_margin="10dp"
+                                android:scaleType="fitXY"
+                                android:src="@mipmap/ic_launcher"
+                                app:riv_border_color="#007aa6"
+                                app:riv_border_width="3px"
+                                app:riv_corner_radius="75dip"
+                                app:riv_oval="false" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/bg_border"
+                            android:gravity="center|center"
+                            android:orientation="vertical"
+                            android:padding="1dp">
+
+                            <ImageView
+                                android:id="@+id/pic"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:adjustViewBounds="true"
+                                flatui:srcCompat="@mipmap/ic_launcher" />
+
+                            <TextView
+                                android:id="@+id/textFile"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="20dp"
+                                android:text="متن تصویر یا فیلم کاربر اینجا نمایش داده می شود" />
+                        </LinearLayout>
+
+                        <com.android.bahaar.FlatButton.FlatButton
+                            android:id="@+id/saveFile"
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:paddingTop="15dp"
+                            android:paddingBottom="15dp"
+                            android:text="ذخیره فایل"
+                            android:textColor="@android:color/white"
+                            android:textSize="@dimen/normal_b"
+                            flatui:fl_cornerRadius="7dp"
+                            flatui:fl_touchEffect="fl_ripple" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha=".8"
+            android:background="#FFFFFF"
+            android:visibility="gone" />
+
+        <com.wang.avi.AVLoadingIndicatorView
+            android:id="@+id/progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:indicatorColor="#000"
+            android:layout_gravity="center"
+            app:indicatorName="BallPulseIndicator" />
+    </FrameLayout>
+
+</LinearLayout>

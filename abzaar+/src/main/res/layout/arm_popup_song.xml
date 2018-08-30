@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/back_sheet"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:textSize="18dp"
+        android:textColor="#000000" />
+
+    <View
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#e2e2e2" />
+
+    <TextView
+        android:id="@+id/popup_song_edit"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="?selectableItemBackground"
+        android:gravity="center|right"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="ویرایش"
+        android:textColor="#cc000000" />
+
+    <TextView
+        android:id="@+id/popup_song_set_default_ringtone"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="?selectableItemBackground"
+        android:gravity="center|right"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="تنظیم آهنگ زنگ پیش فرض"
+        android:textColor="#cc000000" />
+
+    <TextView
+        android:id="@+id/popup_song_assign_to_contact"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="?selectableItemBackground"
+        android:gravity="center|right"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="اختصاص به تماس مخاطب"
+        android:textColor="#cc000000" />
+
+    <TextView
+        android:id="@+id/popup_song_set_default_notification"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="?selectableItemBackground"
+        android:gravity="center|right"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="تنظیم به عنوان صدای هشدار"
+        android:textColor="#cc000000" />
+</LinearLayout>

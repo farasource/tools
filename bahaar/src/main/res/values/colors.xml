@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#0dbbca</color>
+
+    <color name="demo_light">#00BCD4</color>
+    <color name="demo_darker">#00ACC1</color>
+    <color name="green_light">#8BC34A</color>
+    <color name="green_darker">#7CB342</color>
+    <color name="orange_light">#78909C</color>
+    <color name="orange_darker">#546E7A</color>
+    <color name="blue_light">#2196F3</color>
+    <color name="blue_darker">#1E88E5</color>
+    <color name="red_light">#26A69A</color>
+    <color name="red_darker">#00897B</color>
+
+    <integer-array name="demo">
+        <item>@color/demo_darker</item>
+        <item>@color/demo_darker</item>
+        <item>@color/demo_light</item>
+        <item>@color/demo_light</item>
+    </integer-array>
+    <integer-array name="green">
+        <item>@color/green_darker</item>
+        <item>@color/green_darker</item>
+        <item>@color/green_light</item>
+        <item>@color/green_light</item>
+    </integer-array>
+    <integer-array name="orange">
+        <item>@color/orange_darker</item>
+        <item>@color/orange_darker</item>
+        <item>@color/orange_light</item>
+        <item>@color/orange_light</item>
+    </integer-array>
+    <integer-array name="blue">
+        <item>@color/blue_darker</item>
+        <item>@color/blue_darker</item>
+        <item>@color/blue_light</item>
+        <item>@color/blue_light</item>
+    </integer-array>
+    <integer-array name="red">
+        <item>@color/red_darker</item>
+        <item>@color/red_darker</item>
+        <item>@color/red_light</item>
+        <item>@color/red_light</item>
+    </integer-array>
+
+
+</resources>

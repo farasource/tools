@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:flatui="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".db.barcode.BarcodeScanner">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/actions"
+        android:layout_marginBottom="-15dp"
+        android:gravity="center">
+
+        <fragment
+            android:id="@+id/barcode"
+            android:name="ghasemi.abbas.abzaar.db.barcode.b.BarcodeCapture"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            app:gvb_auto_focus="true"
+            app:gvb_code_format="code_39|aztec"
+            app:gvb_draw="true"
+            app:gvb_flash="false"
+            app:gvb_rect_colors="@array/rect_color"
+            app:gvb_show_text="true" />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/actions"
+        android:background="@drawable/back_sheet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center|center"
+            android:gravity="center|center"
+            android:orientation="vertical">
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+
+                <androidx.appcompat.widget.SwitchCompat
+                    android:id="@+id/support_multiple"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center|center"
+                    android:text="چندگانه"
+                    android:textSize="@dimen/main" />
+
+                <androidx.appcompat.widget.SwitchCompat
+                    android:id="@+id/touch_callback"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="18dp"
+                    android:layout_weight="1"
+                    android:gravity="center|center"
+                    android:text="لمس"
+                    android:textSize="@dimen/main" />
+
+
+                <androidx.appcompat.widget.SwitchCompat
+                    android:id="@+id/front_cam"
+                    android:layout_width="match_parent"
+
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="18dp"
+                    android:layout_weight="0.8"
+                    android:gravity="center|center"
+                    android:text="دوربین جلو"
+                    android:textSize="@dimen/main" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="4dp">
+
+                <androidx.appcompat.widget.SwitchCompat
+                    android:id="@+id/focus"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:checked="true"
+                    android:gravity="center|center"
+                    android:text="فوکوس"
+                    android:textSize="@dimen/main" />
+
+                <androidx.appcompat.widget.SwitchCompat
+                    android:id="@+id/draw_rect"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="1"
+                    android:checked="true"
+                    android:gravity="center|center"
+                    android:text="قاب"
+                    android:textSize="@dimen/main" />
+
+
+                <androidx.appcompat.widget.SwitchCompat
+                    android:id="@+id/on_flash"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="1"
+                    android:gravity="center|center"
+                    android:text="فلاش"
+                    android:textSize="@dimen/main" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/draw_text"
+                android:layout_width="wrap_content"
+
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:checked="true"
+                android:gravity="center|center"
+                android:text="نمایش متن"
+                android:textSize="@dimen/main" />
+
+            <CheckBox
+                android:id="@+id/pause"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+
+                android:checked="true"
+                android:text="نمایش خودکار"
+                android:textSize="@dimen/main" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.android.bahaar.FlatButton.FlatButton
+                android:id="@+id/mianbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="میانبر"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/toolbar"
+                flatui:fl_cornerRadius="10dp"
+                flatui:fl_theme="@array/blue"
+                flatui:fl_touchEffect="fl_ease" />
+
+            <com.android.bahaar.FlatButton.FlatButton
+                android:id="@+id/stop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+
+                android:layout_weight="1"
+                android:text="توقف"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/toolbar"
+                flatui:fl_cornerRadius="10dp"
+
+                flatui:fl_theme="@array/red"
+                flatui:fl_touchEffect="fl_ease" />
+
+            <com.android.bahaar.FlatButton.FlatButton
+                android:id="@+id/refresh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+
+                android:text="فعال سازی"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/toolbar"
+                flatui:fl_cornerRadius="10dp"
+                flatui:fl_theme="@array/green"
+                flatui:fl_touchEffect="fl_ease" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/action"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:gravity="bottom|right"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <com.android.bahaar.FlatButton.FlatButton
+            android:id="@+id/type"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:drawableLeft="@drawable/ic_more"
+            android:textColor="@android:color/white"
+            flatui:fl_cornerRadius="100dp"
+            flatui:fl_theme="@array/orange"
+            flatui:fl_touchEffect="fl_ease" />
+    </LinearLayout>
+
+
+</RelativeLayout>

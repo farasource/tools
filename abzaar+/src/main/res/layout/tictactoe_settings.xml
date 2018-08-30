@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAFAFA"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="40dp"
+        android:layout_height="50dp"
+        android:id="@+id/close"
+        android:layout_margin="10dp"
+        android:src="@drawable/game_exit" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/player_1"
+        android:layout_width="match_parent"
+        android:textColor="#000"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/edit_text"
+        android:hint="player 1"
+        android:padding="4dp" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/player_2"
+        android:textColor="#000"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/edit_text"
+        android:hint="player 2"
+        android:padding="4dp" />
+
+</LinearLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="width_xo">100dp</dimen>
+    <dimen name="width_top_xo">364dp</dimen>
+
+    <dimen name="main">12dp</dimen>
+    <dimen name="toolbar">14dp</dimen>
+    <dimen name="normal_b">13dp</dimen>
+    <dimen name="normal_c">15dp</dimen>
+    <dimen name="normal">16dp</dimen>
+    <dimen name="login">22dp</dimen>
+    <dimen name="small">10dp</dimen>
+    <dimen name="large">30dp</dimen>
+    <dimen name="bottom_app">40dp</dimen>
+
+    <dimen name="text_size_extra_micro">10.0sp</dimen>
+    <dimen name="text_size_micro">12.0sp</dimen>
+    <dimen name="text_size_small">14.0sp</dimen>
+    <dimen name="text_size_medium">16.0sp</dimen>
+    <dimen name="text_size_large">18.0sp</dimen>
+    <dimen name="text_size_x_large">24.0sp</dimen>
+    <dimen name="text_size_dayum">36.0sp</dimen>
+
+    <dimen name="w_p">60dp</dimen>
+    <dimen name="h_p">40dp</dimen>
+    <!-- Bubble -->
+    <color name="translucent">#00FFFFFF</color>
+    <dimen name="bubble_padding">2dip</dimen>
+    <dimen name="bubble_padding_top">0dip</dimen>
+    <dimen name="bubble_padding_bottom">4dip</dimen>
+    <dimen name="bubble_padding_right">2dip</dimen>
+    <dimen name="bubble_padding_left">2dip</dimen>
+    <!-- Bubble -->
+    <color name="bubble_center">@color/white</color>
+    <color name="bubble_border">@color/level_liquid_dark</color>
+
+    <!-- Display -->
+    <color name="display_border">#FF333333</color>
+    <color name="display_dark">@color/black</color>
+    <color name="black_reflect">#FF666666</color>
+    <color name="display_reflect">@color/black_reflect</color>
+    <!-- Level -->
+    <color name="level_liquid_reflect">#FFE9DF00</color>
+    <color name="level_border_reflect">@color/black_reflect</color>
+    <color name="level_liquid_dark">#FFB1C800</color>
+    <color name="level_border">@color/black</color>
+    <!-- Markers -->
+    <color name="marker_stroke">#DD222222</color>
+    <color name="marker_reflect">@color/black_reflect</color>
+    <color name="marker_dark">@color/black</color>
+    <dimen name="level_border_width">5dip</dimen>
+    <dimen name="level_border_height">0dip</dimen>
+    <!-- Display -->
+    <dimen name="display_padding">8dip</dimen>
+    <dimen name="display_border">1dip</dimen>
+    <dimen name="display_gap">20dip</dimen>
+    <!-- Sensor -->
+    <dimen name="sensor_gap">5dip</dimen>
+    <!-- Marker -->
+    <dimen name="marker_thickness">3dip</dimen>
+    <color name="lcd_front">#F8F6F7</color>
+    <color name="lcd_back">#44FFFFFF</color>
+    <!-- LCD -->
+    <dimen name="lcd_text">20dip</dimen>
+    <!-- LOCK -->
+    <dimen name="lock_text">32dip</dimen>
+    <!-- INFO -->
+    <dimen name="info_text">12dip</dimen>
+
+</resources>

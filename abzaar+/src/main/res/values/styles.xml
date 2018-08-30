@@ -1,0 +1,54 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar.Bridge">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="colorControlHighlight">#ced7db</item>
+        <item name="android:textColor">#78909C</item>
+        <!--<item name="android:textColorSecondary">@color/blue_light</item>-->
+        <!--<item name="colorControlHighlight">@color/colorControlHighlight</item> -->
+        <!--<item name="android:navigationBarColor" tools:targetApi="lollipop">#ffbb33</item>-->
+        <!--<item name="android:colorForeground">@color/blue_light  607D8B  </item>-->
+
+    </style>
+
+    <style name="Theme.ThemeOverlay" parent="ThemeOverlay.MaterialComponents.Light">
+        <item name="colorControlNormal">#000000</item>
+        <item name="android:textColor">#CC000000</item>
+        <item name="colorControlHighlight">#ced7db</item>
+    </style>
+
+    <style name="dialog_anim">
+        <item name="android:windowEnterAnimation">@anim/in</item>
+        <item name="android:windowExitAnimation">@anim/out</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme_Dialog_Alert" parent="Theme.MaterialComponents.Light.Dialog.Alert.Bridge">
+        <item name="android:textSize">17sp</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textColorPrimary">#cc000000</item>
+        <item name="android:windowBackground">@drawable/back_dialog</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorControlHighlight">#ced7db</item>
+    </style>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.MaterialComponents.Light" />
+
+    <style name="abzaar.TextInputLayout" parent="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxStrokeColor">@color/colorAccent2</item>
+        <item name="boxStrokeWidth">1dp</item>
+        <item name="boxCornerRadiusTopEnd">4dp</item>
+        <item name="boxCornerRadiusTopStart">4dp</item>
+        <item name="boxCornerRadiusBottomEnd">4dp</item>
+        <item name="boxCornerRadiusBottomStart">4dp</item>
+    </style>
+</resources>

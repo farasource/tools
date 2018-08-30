@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F0F0F0">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:layout_marginTop="50dp"
+                    android:src="@drawable/tic_tac_toe" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="-10dp"
+                    android:text="tic-tac-toe"
+                    android:textColor="#DAC02E"
+                    android:textSize="20dp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/single"
+                    style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginRight="15dp"
+                    android:text="بازی تک نفره"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Button"
+                    android:textColor="#fff"
+                    android:textSize="20dp"
+                    app:backgroundTint="#78909C"
+                    app:cornerRadius="15dp"
+                    app:icon="@drawable/ic_person"
+                    app:strokeColor="#637985"
+                    app:strokeWidth="3dp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/twosome"
+                    style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="15dp"
+                    android:text="بازی دو نفره"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Button"
+                    android:textColor="#fff"
+                    android:textSize="20dp"
+                    app:backgroundTint="#E91E63"
+                    app:cornerRadius="15dp"
+                    app:icon="@drawable/ic_supervisor_account"
+                    app:strokeColor="#D81B60"
+                    app:strokeWidth="3dp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/bluetooth"
+                    style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginBottom="20dp"
+                    android:text="بازی با دوستان"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Button"
+                    android:textColor="#fff"
+                    android:textSize="20dp"
+                    app:backgroundTint="#2196F3"
+                    app:cornerRadius="15dp"
+                    app:icon="@drawable/ic_bluetooth"
+                    app:strokeColor="#1E88E5"
+                    app:strokeWidth="3dp" />
+
+            </LinearLayout>
+        </ScrollView>
+
+        <ImageView
+            android:id="@+id/finish"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="15dp"
+            android:src="@drawable/game_exit"
+            />
+
+        <ImageView
+            android:id="@+id/settings"
+            android:layout_width="50dp"
+            android:layout_gravity="right"
+            android:layout_height="50dp"
+            android:layout_margin="15dp"
+            android:src="@drawable/settings"
+            />
+    </FrameLayout>
+</FrameLayout>
